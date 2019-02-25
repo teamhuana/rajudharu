@@ -25,14 +25,6 @@
             .map {width: 100%; margin: 0 auto; border-radius: 5px;}
             .map-container {width: 100%; margin: 0 auto; padding: 0; border-radius: 25px; overflow: hidden;}
         </style>
-	<script>
-		$('a[href*=#]').click(function(event){
-		    $('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    event.preventDefault();
-		});
-	</script>
 	</head>
 	<body id="top">
 
@@ -214,6 +206,13 @@
 					</ul>
 				</div>
 			</footer>
-
+	<script>
+		$('a[href*=#]').click(function(event){
+		    $('html, body').animate({
+			scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    event.preventDefault();
+		});
+	</script>
 	</body>
 </html>
