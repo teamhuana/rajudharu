@@ -51,13 +51,11 @@
 
 	#banner {
 		padding: 5em 2em 4em 2em;
-		text-align:center
 	}
 
 		#banner h2 {
-			font-size: 2.8em;
+			font-size: 3em;
 			text-transform: capitalize;
-			width:70%;
 			
 		}
 
