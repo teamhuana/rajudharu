@@ -1088,7 +1088,7 @@
 			height:60px;
 			bottom:40px;
 			right:40px;
-			background-color:#FFC0CB;
+			background-color:#cb245c;
 			color:#FFF;
 			border-radius:50px;
 			text-align:center;
@@ -1096,5 +1096,7 @@
 		}
 
 		.floaterbtn .my-float{
-			margin-top:20px;
+			margin-top: 18px;
+			    color: #fff;
+			    font-size: 20px;
 		}
