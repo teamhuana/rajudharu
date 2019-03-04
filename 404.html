@@ -11,6 +11,10 @@
 	  src: url('css/fonts/Brusher-Regular.ttf');
 	  font-weight:900
 	}
+    html, body {
+        height: 100%;
+        margin: 0px;
+    }
     #uname{
     	text-transform:capitalize
     }
@@ -19,8 +23,9 @@
         background:url('images/weddbg1.jpg') no-repeat;
         font-family:bannerFont;
     }
-    .a{
-    	margin-top:25px
+    .container{
+    	height: 100%;
+    background: rgba(0,0,0,0.1);
 	}
     a{
     font-size:28px
@@ -30,7 +35,7 @@
 
 <body>
   
-<div class="a">
+<div class="container">
   <h1>Hi, <span id="uname"></span></h1>
   <br><br>
   <a target="_self" href="https://anandyson.github.io/rajudharu">Raju & Dharu</a>
