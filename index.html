@@ -196,17 +196,12 @@
 				</a>
 			</footer>
 	<script>
-		$('a[href*=#]').click(function(event){
-		    $('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 800);
-		    event.preventDefault();
-		});
-		$(window).scroll(function() {
-		    if ($(this).scrollTop()) {
-			$('.floaterbtn').fadeIn();
-		    } else {
-			$('.floaterbtn').fadeOut();
+	       $(window).scroll(function(e) {
+		    if($(this).scrollTop()>200){
+			$('floaterbtn').fadeIn(1000); // Fading in the button on scroll after 150px
+		    }
+		    else{
+			$('floaterbtn').fadeOut(500); // Fading out the button on scroll if less than 150px
 		    }
 		});
 	</script>
