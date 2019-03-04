@@ -200,6 +200,21 @@
 			$('.floaterbtn').fadeOut(500); // Fading out the button on scroll if less than 150px
 		    }
 		});
+		 $(document).ready(function() {
+		   var scrollOffset = 200;
+		   $(window).scroll(function() {
+		    $('.animated').each(function() {
+		      if ($(window).scrollTop() + $(window).height() - scrollOffset > $(this).position().top) {
+			if ($(this).hasClass('slideInUp')){
+			  $(this).removeClass('slideInUp');
+			}
+			else {
+			  $(this).addClass('slideInUp');
+			}
+		      }
+		    });
+		 });
+  });
 	</script>
 	</body>
 </html>
