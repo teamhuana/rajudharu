@@ -195,12 +195,11 @@
 	       $(window).scroll(function(e) {
 		    if($(this).scrollTop()>200){
 			$('.floaterbtn').fadeIn(1000);
+			$('.floaterbtn').fadeOut(1500);
 		    }
 		    else{
 			$('.floaterbtn').fadeOut(500);
 		    }
-		    $('.floaterbtn').fadeIn(1000);
-		    $('.floaterbtn').fadeOut(500);
 		});
 		var animateHTML = function() {
 		  var elems;
