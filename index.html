@@ -200,21 +200,35 @@
 			$('.floaterbtn').fadeOut(500); // Fading out the button on scroll if less than 150px
 		    }
 		});
-		 $(document).ready(function() {
-		   var scrollOffset = 200;
-		   $(window).scroll(function() {
-		    $('.a').each(function() {
-		      if ($(window).scrollTop() + $(window).height() - scrollOffset > $(this).position().top) {
-			if ($(this).hasClass('slideInUp')){
-			  //$(this).removeClass('slideInUp');
-			}
-			else {
-			  $(this).addClass('slideInUp animated');
-			}
+		var animateHTML = function() {
+		  var elems;
+		  var windowHeight;
+		  function init() {
+		    elems = document.querySelectorAll('.a');
+		    windowHeight = window.innerHeight;
+		    addEventHandlers();
+		    checkPosition();
+		  }
+		  function addEventHandlers() {
+		    window.addEventListener('scroll', checkPosition);
+		    window.addEventListener('resize', init);
+		  }
+		  function checkPosition() {
+		    for (var i = 0; i < elems.length; i++) {
+		      var positionFromTop = elems[i].getBoundingClientRect().top;
+		      if (positionFromTop - windowHeight <= 0) {
+			elems[i].className = elems[i].className.replace(
+			  'a',
+			  'slideInUp'
+			);
 		      }
-		    });
-		 });
-  });
+		    }
+		  }
+		  return {
+		    init: init
+		  };
+		};
+		animateHTML().init();
 	</script>
 	</body>
 </html>
