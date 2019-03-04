@@ -1,1 +1,45 @@
-<a href="{{ site.url }}/blog">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+    @font-face {
+	  font-family: bannerFont;
+	  src: url('css/fonts/Brusher-Regular.ttf');
+	  font-weight:900
+	}
+    #uname{
+    	text-transform:capitalize
+    }
+    body{
+    	text-align:center;
+        background:url('images/weddbg.jpg') no-repeat;
+        background-size:cover;
+        font-family:bannerFont;
+    }
+    .a{
+    	margin-top:10px
+	}
+    a{
+    font-size:28px
+    }
+    </style>
+</head>
+
+<body>
+  
+<div class="a">
+  <h1>Hi, <span id="uname"></span></h1>
+  <br><br>
+  <a target="_self" href="https://anandyson.github.io/rajudharu">Raju & Dharu</a>
+</div>
+    <script>
+    var uname =  window.location.href.split('/');
+  document.getElementById("uname").innerHTML = 
+  uname[uname.length-1];
+  </script>
+</body>
+</html>
