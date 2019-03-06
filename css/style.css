@@ -1095,7 +1095,7 @@
 			height:60px;
 			bottom:25px;
 			right:25px;
-			background-color:#cb245c;
+			background-color:#00BCD4;
 			color:#FFF;
 			border-radius:50px;
 			text-align:center;
@@ -1106,4 +1106,16 @@
 			margin-top: 18px;
 			    color: #fff;
 			    font-size: 20px;
+		}
+		.maporcab .gmap{
+			background: #fff;
+			color: #000 !important;
+			box-shadow: 1px 1px 5px #888;
+			padding: 0 15px;
+			margin-top:20px;
+		}
+		.maporcab .cabbook{
+			background:#cb245c;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
